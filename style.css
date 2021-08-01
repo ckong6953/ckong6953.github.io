@@ -208,3 +208,26 @@ hr {
     margin: auto;
     font-size: 35px;
 }
+
+@media screen and (max-width:640px) {
+    .about-text{
+        font-size: medium;
+        width: 80%
+    }
+
+    .resume-card > * {
+        width: 350px;
+    }
+
+    .email-button{
+        font-size: medium;
+    }
+
+    .contact-text{
+        font-size: medium;
+    }
+
+    .header-card{
+        font-size: medium;
+    }
+}
