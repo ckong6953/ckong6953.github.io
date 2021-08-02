@@ -231,3 +231,9 @@ hr {
         font-size: medium;
     }
 }
+
+.trouble-text{
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+}
