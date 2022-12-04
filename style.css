@@ -64,14 +64,6 @@ body, html {
     background-color: rgb(30, 30, 105);
 }
 
-a {
-    color: white;
-}
-
-a:link, a:visited {
-    text-decoration: none;
-}
-
 
 .spacer {
     margin-left: 300px;
@@ -144,7 +136,10 @@ hr {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
     .spacer{
         margin-left: 10px;
         margin-right: 10px;
