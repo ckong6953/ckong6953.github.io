@@ -1,120 +1,99 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+body, html {
+    font: 400 15px/1.8 "Arvo", sans-serif;
+    height: 100%;
 }
 
-body {
-    margin: 0;
-    background-color: #ddd;
+.headimg-1 {
+    background-image: url(Pictures/headshot.png);
+    height: 80%; 
 }
 
-.website-header{
-    background: lightblue;
-    padding: 20px;
+.headimg-2 {
+    background-image: url(Pictures/journey.jpg);
+    height: 30%; 
+}
+
+.headimg-3 {
+    background-image: url(Pictures/links.jpg);
+    height: 20%; 
+}
+
+.headimg-1, .headimg-2, .headimg-3{
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    height:1000px;
+    background-color:grey;
+    opacity: 80%;
+    font-size:36px"
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
     text-align: center;
-    font-size: x-large;
+    color: #000;
 }
-
-.header-text{
-    animation: fadeInAnimation; 
-    animation-duration: 5s;
-}
-
-.header-subtext {
-    font-size: medium;
-    animation: fadeInAnimation;
-    animation-duration: 10s;
-}
-
-@keyframes fadeInAnimation {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-}
-
-.topnav a {
-    display: block; 
-    color: #f2f2f2;
+.button-widget {
+    margin-top: 20px;
     text-align: center;
-    padding: 14px 16px;
+}
+
+.resume-button {
+    position: relative;
+    font-family: "Arvo";
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 40%;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: rgb(30, 30, 105);
+}
+
+a {
+    color: white;
+}
+
+a:link, a:visited {
     text-decoration: none;
 }
 
-.topnav a:hover{
-    background-color: #ddd;
-    color: black;
+
+.spacer {
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
-.column {
+.logo {
     float: left;
-    font-size: x-large;
+    margin-right: 20px;
+    width: 6%;
 }
 
-.header-1 {
-    width: 33.33%;
-}
-
-.header-2{
-    width: 33.33%;
-}
-
-.header-3{
-    width: 33.33%;
-}
-
-
-.card{
-    background-color:  #ddd;
-    padding: 20px;
-    margin-top: 20px;
+.footer {
     text-align: center;
-}
-
-.footer{
-    padding: 20px;
-    text-align: center;
-    background: #a3a3a3;
-    margin-top: 20px;
-    font-size: x-large;
-    overflow: hidden;
-}
-
-.header-image{
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
-    width: 300px;
-    height: 400px;
-    border-radius: 20%;
-    overflow: hidden;
-    animation: fadeInAnimation;
-    animation-duration: 5s;
-}
-
-.header-card { 
-    font-size: x-large;
-}
-
-.about-text {
-    text-align: left;
-    width: 60%;
-    margin: auto;
-    font-size: large;
+    margin-bottom: 10px;
 }
 
 hr {
     width: 70%;
 }
 
-.social-menu {
+.link-menu {
     margin: auto;
     width: 170px;
     text-align: center;
@@ -122,7 +101,26 @@ hr {
 	list-style-type: none;
 }
 
-.social-menu i {
+.fa-facebook {
+    text-decoration: none;
+    background: #3b5998;
+}
+
+.fa-instagram {
+    text-decoration: none;
+    background: #c13584;
+}
+
+.fa-linkedin {
+    text-decoration: none;
+    background: #007bb6;
+}
+
+.fa-github {
+    background: black;
+}
+
+.link-menu i {
     color: #fff;
 	width: 40px;
 	height: 40px;
@@ -134,106 +132,34 @@ hr {
 	justify-content: center;
 }
 
-.social-menu i:before {
+.link-menu i:before {
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
 }
 
-.social-menu a {
-	text-decoration: none;
-}
-
-.fa-facebook {
-	background:#3b5998
-} 
-
-.fa-linkedin {
-	background:#007bb6
-}
-
-.fa-github {
-	background:black
-}
-
-.fa-instagram {
-	background:#c13584
-}
-
-.social-menu i:hover {
+.link-menu i:hover {
 	opacity: .7;
 	border-radius: 0;
 }
 
-.resume-card{
-    animation: fadeInAnimation;
-    animation-duration: 5s;
-}
 
-.contact-button{
-    width: 60%;
-    margin: auto;
-    padding-bottom: 70px;
-    animation: fadeInAnimation;
-    animation-duration: 5s;
-}
-
-.school-button{
-    width: 50%;
-    text-decoration: none;
-
-}
-
-.professional-button{
-    width: 50%;
-    text-decoration: none;
-}
-
-.email-button{
-    background-color: #1384a8;
-    border-radius: 10%;
-    font-size:x-large;
-    border-color: black;
-    color: white;
-    height: 75px;
-}
-
-.email-text{
-    text-decoration: none;
-}
-
-.contact-text{
-    width: 70%;
-    text-align: center;
-    margin: auto;
-    font-size: 35px;
-}
-
-.trouble-text{
-    text-align: center;
-    margin: auto;
-    padding-bottom: 10px;
-}
-
-@media screen and (max-width:640px) {
-    .about-text{
-        font-size: medium;
-        width: 80%
+@media only screen and (max-width: 600px) {
+    .spacer{
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
-    .resume-card > * {
-        width: 350px;
+    .logo {
+        margin-right: 10px;
+        width: 10%;
     }
 
-    .email-button{
-        font-size: medium;
+    .headimg-1 {
+        height: 60%;
     }
-
-    .contact-text{
-        font-size: medium;
+    .headimg-2, .headimg-3
+    {
+        height: 20%;
     }
-
-    .header-card{
-        font-size: medium;
-    }
-}
+  }
