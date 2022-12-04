@@ -135,11 +135,11 @@ hr {
 	border-radius: 0;
 }
 
+a {
+    text-decoration: none;
+}
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+@media only screen and (max-device-width: 1366px)  { 
     .spacer{
         margin-left: 10px;
         margin-right: 10px;
@@ -156,5 +156,8 @@ hr {
     .headimg-2, .headimg-3
     {
         height: 20%;
+    }
+    .headimg-1, .headimg-2, .headimg-3{
+        background-attachment: scroll;
     }
   }
